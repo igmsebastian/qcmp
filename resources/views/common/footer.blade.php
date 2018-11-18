@@ -22,7 +22,7 @@
             <div class="col-12 col-md-6">
                 <div class="single_widget_area mb-30">
                     <ul class="footer_widget_menu">
-                        <li><a href="#">Order Status</a></li>
+                        <li><a href="{{ route('home.order.status') }}">Order Status</a></li>
                         <li><a href="#">Payment Options</a></li>
                         <li><a href="#">Shipping and Delivery</a></li>
                         <li><a href="#">Guides</a></li>

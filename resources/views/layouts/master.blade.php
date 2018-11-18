@@ -4,6 +4,7 @@
 <head>
     <title>@yield('title')</title>
     @include('common.head')
+    @yield('head')
 </head>
 
 <body>
@@ -48,13 +49,13 @@
     <div class="top_catagory_area section-padding-80 clearfix">
         @yield('catagory')
     </div>
-
     <!-- ##### Top Catagory Area End ##### -->
 
     <!-- ##### CTA Area Start ##### -->
-    {{-- <div class="cta-area">
+    <div class="cta-area">
         <div class="container">
-            <div class="row">
+            @yield('static')
+            {{-- <div class="row">
                 <div class="col-12">
                     <div class="cta-content bg-img background-overlay" style="background-image: url(img/bg-img/bg-5.jpg);">
                         <div class="h-100 d-flex align-items-center justify-content-end">
@@ -66,9 +67,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
-    </div> --}}
+    </div>
     <!-- ##### CTA Area End ##### -->
 
     <!-- ##### New Arrivals Area Start ##### -->
@@ -88,10 +89,10 @@
     @include('common.footer')
     <!-- ##### Footer Area End ##### -->
 
-    @stack('scripts')
-
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+    @stack('scripts')
     <!-- Popper js -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap js -->
@@ -102,6 +103,7 @@
     <script src="js/classy-nav.min.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
 
 </body>
 

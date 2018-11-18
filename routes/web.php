@@ -14,3 +14,4 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home.index');
 Route::get('/contact', 'HomeController@contact')->name('home.contact');
+Route::get('/status', 'HomeController@status')->name('home.order.status');
